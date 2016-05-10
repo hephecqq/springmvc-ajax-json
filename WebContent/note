@@ -1,0 +1,9 @@
+springmvc中ajax的处理
+1.使用HttpServletResponse来处理不需要解析器
+2.springmvc中处理json数据
+	1.比struts2更优雅
+	2.处理方式
+		a.导入相应的jar包，需要jackson.jar(annotation,core,databing)
+		b.在spring中配置相应的json转换器（查看官网或者博客）
+		c.Controller代码@ResponseBody
+	

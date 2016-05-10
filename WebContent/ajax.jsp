@@ -7,14 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<script type="text/javascript" src="<%=application.getContextPath() %>/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
 
 	用户名：
 	<input type="text" id="txtName" name="username" />
 	<script type="text/javascript">
 		$(function() {
 			$("#txtName").blur(function() {
-				$.post("/ajax", {
+				$.post("ajax", {
 					'name' : $('#txtName').val()
 				}, function(data) {
 					alert(data);
