@@ -13,6 +13,6 @@ public class SaveProductCotroller {
 		String username=request.getParameter("username");
 		request.setAttribute("username", username);
 		System.out.println(username);
-		return  Constants.WEB_INF+"/jsp/saveUser.jsp";
+		return "saveUser";
 	}
 }
